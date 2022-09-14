@@ -14,7 +14,7 @@ def solve(idx, res):
     solve(idx+1,res)
     solve(idx+1,res - k[idx])
 
-n, s = map(int, sys.stdin.readline().split())
+n, s = map(int, sys.stdin.readline().split()) 
 k = list(map(int, sys.stdin.readline().split()))
 count = 0 
 solve( 0,0 )
