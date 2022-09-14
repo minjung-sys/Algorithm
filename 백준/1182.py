@@ -11,8 +11,8 @@ def solve(idx, res):
     if res ==s:
         count += 1
     
-    solve(idx+1,res)
-    solve(idx+1,res - k[idx])
+    solve(idx+1,res) #현재 인덱스를 더한 결과
+    solve(idx+1,res - k[idx]) #현재 인덱스의 숫자를 더하지 않았을 때 결과
 
 n, s = map(int, sys.stdin.readline().split()) 
 k = list(map(int, sys.stdin.readline().split()))
